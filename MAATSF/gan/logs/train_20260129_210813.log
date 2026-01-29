@@ -1,0 +1,108 @@
+2026-01-29 21:08:13,017  INFO  ARGS = {
+  "notes": null,
+  "data_path": "/root/autodl-tmp/MAA-KDJ/database/Corn_processed.csv",
+  "output_dir": "/root/autodl-tmp/MAATSF/gan",
+  "ERM": false,
+  "backtrader": false,
+  "feature_columns": [
+    2,
+    22,
+    2,
+    22,
+    2,
+    22
+  ],
+  "target_columns": [
+    4
+  ],
+  "start_timestamp": 31,
+  "end_timestamp": -1,
+  "window_sizes": [
+    5,
+    10,
+    15
+  ],
+  "N_pairs": 3,
+  "patience": null,
+  "num_classes": 3,
+  "generator_names": [
+    "gru",
+    "lstm",
+    "transformer"
+  ],
+  "discriminators": null,
+  "distill_epochs": 1,
+  "cross_finetune_epochs": 5,
+  "device": [
+    0
+  ],
+  "num_epochs": 50,
+  "lr": 2e-05,
+  "batch_size": 64,
+  "train_split": 0.7,
+  "random_seed": 3407,
+  "amp_dtype": "none",
+  "mode": "train",
+  "ckpt_path": "latest",
+  "target_name": "Corn"
+}
+2026-01-29 21:08:19,893  INFO  Epoch 1 | Validation MSE: G1: 0.52356476, G2: 0.70273495, G3: 0.00850374 | Accuracy: G1: 48.68 %, G2: 2.37 %, G3: 49.86 %
+2026-01-29 21:08:25,081  INFO  Epoch 2 | Validation MSE: G1: 0.31559652, G2: 0.58567321, G3: 0.00654021 | Accuracy: G1: 48.68 %, G2: 48.68 %, G3: 48.68 %
+2026-01-29 21:08:30,549  INFO  Epoch 3 | Validation MSE: G1: 0.15445697, G2: 0.44610706, G3: 0.00308838 | Accuracy: G1: 48.68 %, G2: 48.68 %, G3: 48.68 %
+2026-01-29 21:08:35,889  INFO  Epoch 4 | Validation MSE: G1: 0.07211164, G2: 0.27830568, G3: 0.00487055 | Accuracy: G1: 48.68 %, G2: 48.68 %, G3: 48.12 %
+2026-01-29 21:08:40,943  INFO  Epoch 5 | Validation MSE: G1: 0.04952463, G2: 0.12263687, G3: 0.00194585 | Accuracy: G1: 48.68 %, G2: 48.68 %, G3: 48.61 %
+2026-01-29 21:08:45,930  INFO  Epoch 6 | Validation MSE: G1: 0.04133130, G2: 0.05300784, G3: 0.00186966 | Accuracy: G1: 48.68 %, G2: 48.68 %, G3: 48.61 %
+2026-01-29 21:08:51,008  INFO  Epoch 7 | Validation MSE: G1: 0.03765106, G2: 0.03914547, G3: 0.00255374 | Accuracy: G1: 48.68 %, G2: 48.68 %, G3: 48.81 %
+2026-01-29 21:08:56,303  INFO  Epoch 8 | Validation MSE: G1: 0.03413204, G2: 0.03350307, G3: 0.00225348 | Accuracy: G1: 48.68 %, G2: 48.68 %, G3: 47.77 %
+2026-01-29 21:09:01,264  INFO  Epoch 9 | Validation MSE: G1: 0.03115553, G2: 0.03297612, G3: 0.00150640 | Accuracy: G1: 47.56 %, G2: 48.68 %, G3: 48.68 %
+2026-01-29 21:09:06,146  INFO  Epoch 10 | Validation MSE: G1: 0.02747943, G2: 0.02980587, G3: 0.00150935 | Accuracy: G1: 47.77 %, G2: 48.68 %, G3: 49.02 %
+2026-01-29 21:09:11,277  INFO  Epoch 11 | Validation MSE: G1: 0.02334646, G2: 0.01912524, G3: 0.00153965 | Accuracy: G1: 47.84 %, G2: 48.68 %, G3: 48.68 %
+2026-01-29 21:09:16,503  INFO  Epoch 12 | Validation MSE: G1: 0.02123479, G2: 0.01327971, G3: 0.00124294 | Accuracy: G1: 47.77 %, G2: 48.68 %, G3: 47.84 %
+2026-01-29 21:09:21,641  INFO  Epoch 13 | Validation MSE: G1: 0.01742097, G2: 0.00658568, G3: 0.00143014 | Accuracy: G1: 47.91 %, G2: 48.68 %, G3: 48.12 %
+2026-01-29 21:09:26,982  INFO  Epoch 14 | Validation MSE: G1: 0.01595227, G2: 0.00238040, G3: 0.00194765 | Accuracy: G1: 47.98 %, G2: 48.68 %, G3: 48.68 %
+2026-01-29 21:09:32,325  INFO  Epoch 15 | Validation MSE: G1: 0.01375965, G2: 0.00101650, G3: 0.00127793 | Accuracy: G1: 48.40 %, G2: 48.68 %, G3: 48.68 %
+2026-01-29 21:09:37,518  INFO  Epoch 16 | Validation MSE: G1: 0.01176022, G2: 0.00071618, G3: 0.00141695 | Accuracy: G1: 48.26 %, G2: 48.68 %, G3: 48.68 %
+2026-01-29 21:09:42,828  INFO  Epoch 17 | Validation MSE: G1: 0.01232019, G2: 0.00074360, G3: 0.00123045 | Accuracy: G1: 48.12 %, G2: 48.68 %, G3: 47.98 %
+2026-01-29 21:09:47,801  INFO  Epoch 18 | Validation MSE: G1: 0.01005575, G2: 0.00075404, G3: 0.00155163 | Accuracy: G1: 48.47 %, G2: 48.68 %, G3: 49.86 %
+2026-01-29 21:09:53,087  INFO  Epoch 19 | Validation MSE: G1: 0.01029390, G2: 0.00075393, G3: 0.00142342 | Accuracy: G1: 48.19 %, G2: 48.68 %, G3: 48.19 %
+2026-01-29 21:09:58,466  INFO  Epoch 20 | Validation MSE: G1: 0.01034022, G2: 0.00075645, G3: 0.00136299 | Accuracy: G1: 48.68 %, G2: 48.68 %, G3: 47.00 %
+2026-01-29 21:10:03,884  INFO  Epoch 21 | Validation MSE: G1: 0.01029784, G2: 0.00075541, G3: 0.00143505 | Accuracy: G1: 48.40 %, G2: 48.68 %, G3: 47.14 %
+2026-01-29 21:10:09,235  INFO  Epoch 22 | Validation MSE: G1: 0.01020782, G2: 0.00075446, G3: 0.00153730 | Accuracy: G1: 48.68 %, G2: 48.68 %, G3: 47.91 %
+2026-01-29 21:10:14,619  INFO  Epoch 23 | Validation MSE: G1: 0.01041042, G2: 0.00075451, G3: 0.00124071 | Accuracy: G1: 48.61 %, G2: 48.68 %, G3: 47.70 %
+2026-01-29 21:10:19,956  INFO  Epoch 24 | Validation MSE: G1: 0.01045943, G2: 0.00075439, G3: 0.00148379 | Accuracy: G1: 48.40 %, G2: 48.68 %, G3: 48.40 %
+2026-01-29 21:10:25,324  INFO  Epoch 25 | Validation MSE: G1: 0.00993998, G2: 0.00075488, G3: 0.00134508 | Accuracy: G1: 48.47 %, G2: 48.68 %, G3: 47.98 %
+2026-01-29 21:10:30,504  INFO  Epoch 26 | Validation MSE: G1: 0.01031333, G2: 0.00075438, G3: 0.00129900 | Accuracy: G1: 48.61 %, G2: 48.68 %, G3: 47.28 %
+2026-01-29 21:10:35,866  INFO  Epoch 27 | Validation MSE: G1: 0.01003172, G2: 0.00075489, G3: 0.00142603 | Accuracy: G1: 48.47 %, G2: 48.68 %, G3: 47.98 %
+2026-01-29 21:10:41,307  INFO  Epoch 28 | Validation MSE: G1: 0.01023251, G2: 0.00075466, G3: 0.00124278 | Accuracy: G1: 48.68 %, G2: 48.68 %, G3: 47.21 %
+2026-01-29 21:10:46,585  INFO  Epoch 29 | Validation MSE: G1: 0.01018194, G2: 0.00075355, G3: 0.00120671 | Accuracy: G1: 48.33 %, G2: 48.68 %, G3: 48.19 %
+2026-01-29 21:10:51,920  INFO  Epoch 30 | Validation MSE: G1: 0.00967070, G2: 0.00075240, G3: 0.00141464 | Accuracy: G1: 48.12 %, G2: 48.68 %, G3: 48.33 %
+2026-01-29 21:10:57,053  INFO  Epoch 31 | Validation MSE: G1: 0.00994488, G2: 0.00075381, G3: 0.00128292 | Accuracy: G1: 48.26 %, G2: 48.68 %, G3: 47.70 %
+2026-01-29 21:11:02,387  INFO  Epoch 32 | Validation MSE: G1: 0.00952081, G2: 0.00075306, G3: 0.00132521 | Accuracy: G1: 48.19 %, G2: 48.68 %, G3: 47.42 %
+2026-01-29 21:11:07,487  INFO  Epoch 33 | Validation MSE: G1: 0.00946710, G2: 0.00075082, G3: 0.00134635 | Accuracy: G1: 48.68 %, G2: 48.68 %, G3: 48.05 %
+2026-01-29 21:11:12,474  INFO  Epoch 34 | Validation MSE: G1: 0.00961116, G2: 0.00075231, G3: 0.00132907 | Accuracy: G1: 48.19 %, G2: 48.68 %, G3: 47.77 %
+2026-01-29 21:11:17,475  INFO  Epoch 35 | Validation MSE: G1: 0.00949913, G2: 0.00075093, G3: 0.00143119 | Accuracy: G1: 47.91 %, G2: 48.68 %, G3: 48.47 %
+2026-01-29 21:11:22,675  INFO  Epoch 36 | Validation MSE: G1: 0.00951544, G2: 0.00075103, G3: 0.00123880 | Accuracy: G1: 47.91 %, G2: 48.68 %, G3: 48.47 %
+2026-01-29 21:11:28,048  INFO  Epoch 37 | Validation MSE: G1: 0.00949312, G2: 0.00075096, G3: 0.00129626 | Accuracy: G1: 47.91 %, G2: 48.68 %, G3: 48.12 %
+2026-01-29 21:11:33,052  INFO  Epoch 38 | Validation MSE: G1: 0.00950975, G2: 0.00075136, G3: 0.00130681 | Accuracy: G1: 47.91 %, G2: 48.68 %, G3: 48.47 %
+2026-01-29 21:11:38,420  INFO  Epoch 39 | Validation MSE: G1: 0.00950528, G2: 0.00075069, G3: 0.00130900 | Accuracy: G1: 47.84 %, G2: 48.68 %, G3: 48.05 %
+2026-01-29 21:11:43,652  INFO  Epoch 40 | Validation MSE: G1: 0.00948462, G2: 0.00075068, G3: 0.00134543 | Accuracy: G1: 47.77 %, G2: 48.68 %, G3: 47.98 %
+2026-01-29 21:11:49,036  INFO  Epoch 41 | Validation MSE: G1: 0.00946982, G2: 0.00075062, G3: 0.00128270 | Accuracy: G1: 47.84 %, G2: 48.68 %, G3: 48.12 %
+2026-01-29 21:11:54,004  INFO  Epoch 42 | Validation MSE: G1: 0.00942756, G2: 0.00075086, G3: 0.00131633 | Accuracy: G1: 48.26 %, G2: 48.68 %, G3: 48.05 %
+2026-01-29 21:11:59,043  INFO  Epoch 43 | Validation MSE: G1: 0.00940172, G2: 0.00075029, G3: 0.00134565 | Accuracy: G1: 48.26 %, G2: 48.68 %, G3: 48.05 %
+2026-01-29 21:12:04,174  INFO  Epoch 44 | Validation MSE: G1: 0.00945942, G2: 0.00075037, G3: 0.00133557 | Accuracy: G1: 48.19 %, G2: 48.68 %, G3: 47.98 %
+2026-01-29 21:12:08,738  INFO  Epoch 45 | Validation MSE: G1: 0.00947201, G2: 0.00075059, G3: 0.00132814 | Accuracy: G1: 48.26 %, G2: 48.68 %, G3: 47.98 %
+2026-01-29 21:12:14,136  INFO  Epoch 46 | Validation MSE: G1: 0.00943684, G2: 0.00075014, G3: 0.00133510 | Accuracy: G1: 48.12 %, G2: 48.68 %, G3: 47.98 %
+2026-01-29 21:12:19,322  INFO  Epoch 47 | Validation MSE: G1: 0.00942099, G2: 0.00075031, G3: 0.00134048 | Accuracy: G1: 48.19 %, G2: 48.68 %, G3: 47.98 %
+2026-01-29 21:12:24,585  INFO  Epoch 48 | Validation MSE: G1: 0.00939475, G2: 0.00075094, G3: 0.00127924 | Accuracy: G1: 48.05 %, G2: 48.68 %, G3: 48.05 %
+2026-01-29 21:12:29,824  INFO  Epoch 49 | Validation MSE: G1: 0.00939895, G2: 0.00075035, G3: 0.00134492 | Accuracy: G1: 48.40 %, G2: 48.68 %, G3: 47.91 %
+2026-01-29 21:12:35,055  INFO  Epoch 50 | Validation MSE: G1: 0.00937811, G2: 0.00075062, G3: 0.00131625 | Accuracy: G1: 48.26 %, G2: 48.68 %, G3: 47.77 %
+2026-01-29 21:12:43,500  INFO  [Best MSE Epochs]     G1:50, G2:16, G3:29
+2026-01-29 21:12:43,501  INFO  [Best MSE Values]     G1: 0.009378, G2: 0.000716, G3: 0.001207
+2026-01-29 21:12:43,501  INFO  [Best ACC Epochs]     G1:1, G2:2, G3:1
+2026-01-29 21:12:43,501  INFO  [Best Accuracy Values]G1: 48.68%, G2: 48.68%, G3: 49.86%
+2026-01-29 21:12:48,070  INFO  [Train] MAA-TSF-GRU: MSE=2588.6043, MAE=39.6490, RMSE=50.8783, MAPE=2.1732
+2026-01-29 21:12:48,070  INFO  [Test]  MAA-TSF-GRU: MSE=18486.2673, MAE=106.9683, RMSE=135.9642, MAPE=4.0593
+2026-01-29 21:12:51,662  INFO  [Train] MAA-TSF-LSTM: MSE=2324.9235, MAE=32.7113, RMSE=48.2175, MAPE=1.9887
+2026-01-29 21:12:51,662  INFO  [Test]  MAA-TSF-LSTM: MSE=1411.7425, MAE=29.4223, RMSE=37.5732, MAPE=1.1838
+2026-01-29 21:12:55,326  INFO  [Train] MAA-TSF-Transformer: MSE=836.9104, MAE=20.7688, RMSE=28.9294, MAPE=1.0863
+2026-01-29 21:12:55,327  INFO  [Test]  MAA-TSF-Transformer: MSE=2378.6906, MAE=36.4663, RMSE=48.7718, MAPE=1.4062

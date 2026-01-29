@@ -98,7 +98,8 @@ def train_multi_gan(args,
     best_model_state = [None for _ in range(N)]  # 为每个生成器保存最佳模型
 
     patience_counter = 0
-    patience = args.patience
+    # 修改了patience
+    patience = args.patience if args.patience is not None else 20
     feature_num = train_xes[0].shape[2]
     target_num = train_y.shape[-1]
 
@@ -525,8 +526,10 @@ def discriminate_fake(args, X, Y, LABELS,
 
 
             total_loss = cls_loss + mse_loss
+            # 修改了这里的 combined_loss 计算方式
             # `combined_loss` 对应 `(1 - return_loss_weight) * total_loss + return_loss_weight * return_loss`
-            combined_loss = (1 - return_loss_weight) * total_loss + return_loss_weight * return_loss
+            gan_weight = 0.05
+            combined_loss = (1 - return_loss_weight) * total_loss + return_loss_weight * return_loss + gan_weight * gan_loss
 
             # 最终返回生成器总损失（用于反向传播）以及各个子损失，方便记录
             return gan_loss, mse_loss, cls_loss, return_loss, combined_loss

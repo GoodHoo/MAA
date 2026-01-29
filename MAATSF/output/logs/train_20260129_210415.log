@@ -1,0 +1,149 @@
+2026-01-29 21:04:15,458  INFO  ARGS = {
+  "notes": null,
+  "data_path": "/root/autodl-tmp/MAA-KDJ/database/Corn_processed.csv",
+  "output_dir": "/root/autodl-tmp/MAATSF/output",
+  "ERM": false,
+  "feature_columns": [
+    2,
+    22,
+    2,
+    22,
+    2,
+    22
+  ],
+  "target_columns": [
+    4
+  ],
+  "start_timestamp": 31,
+  "end_timestamp": -1,
+  "window_sizes": [
+    5,
+    10,
+    15
+  ],
+  "N_pairs": 3,
+  "num_classes": 3,
+  "generator_names": [
+    "gru",
+    "lstm",
+    "transformer"
+  ],
+  "discriminators": null,
+  "distill_epochs": 1,
+  "cross_finetune_epochs": 5,
+  "device": [
+    0
+  ],
+  "num_epochs": 50,
+  "lr": 2e-05,
+  "batch_size": 64,
+  "train_split": 0.7,
+  "random_seed": 3407,
+  "amp_dtype": "none",
+  "mode": "train",
+  "ckpt_path": "latest",
+  "patience": 5,
+  "target_name": "Corn.csv"
+}
+2026-01-29 21:04:22,181  INFO  Epoch 1 | Validation MSE: G1: 0.52356476, G2: 0.70273495, G3: 0.00850374 | Accuracy: G1: 48.68 %, G2: 2.37 %, G3: 49.86 %
+2026-01-29 21:04:22,230  INFO  Generator 1 | Sharpe: 0.3080 | MaxDrawdown: 14.34% | AnnualReturn: 1.49% | WinRate: 49.89% | CumReturn: 8.77% | AvgPosition: 41.68%
+2026-01-29 21:04:22,293  INFO  Generator 2 | Sharpe: 0.0000 | MaxDrawdown: 0.00% | AnnualReturn: 0.00% | WinRate: 0.00% | CumReturn: 0.00% | AvgPosition: 33.85%
+2026-01-29 21:04:22,380  INFO  Generator 3 | Sharpe: 0.3280 | MaxDrawdown: 6.78% | AnnualReturn: 1.87% | WinRate: 51.04% | CumReturn: 11.11% | AvgPosition: 49.58%
+2026-01-29 21:04:27,763  INFO  Epoch 2 | Validation MSE: G1: 0.31559652, G2: 0.58567321, G3: 0.00654021 | Accuracy: G1: 48.68 %, G2: 48.68 %, G3: 48.68 %
+2026-01-29 21:04:27,815  INFO  Generator 1 | Sharpe: 0.3086 | MaxDrawdown: 15.02% | AnnualReturn: 1.56% | WinRate: 49.89% | CumReturn: 9.20% | AvgPosition: 43.74%
+2026-01-29 21:04:27,869  INFO  Generator 2 | Sharpe: 0.3171 | MaxDrawdown: 11.63% | AnnualReturn: 1.26% | WinRate: 49.89% | CumReturn: 7.39% | AvgPosition: 33.69%
+2026-01-29 21:04:27,952  INFO  Generator 3 | Sharpe: 0.3141 | MaxDrawdown: 17.56% | AnnualReturn: 1.86% | WinRate: 49.89% | CumReturn: 11.08% | AvgPosition: 52.04%
+2026-01-29 21:04:33,323  INFO  Epoch 3 | Validation MSE: G1: 0.15445696, G2: 0.44610706, G3: 0.00308839 | Accuracy: G1: 48.68 %, G2: 48.68 %, G3: 48.68 %
+2026-01-29 21:04:33,375  INFO  Generator 1 | Sharpe: 0.3097 | MaxDrawdown: 15.75% | AnnualReturn: 1.64% | WinRate: 49.89% | CumReturn: 9.69% | AvgPosition: 46.00%
+2026-01-29 21:04:33,429  INFO  Generator 2 | Sharpe: 0.3158 | MaxDrawdown: 11.89% | AnnualReturn: 1.28% | WinRate: 49.89% | CumReturn: 7.51% | AvgPosition: 34.44%
+2026-01-29 21:04:33,512  INFO  Generator 3 | Sharpe: 0.3116 | MaxDrawdown: 17.63% | AnnualReturn: 1.85% | WinRate: 49.89% | CumReturn: 11.00% | AvgPosition: 52.16%
+2026-01-29 21:04:38,784  INFO  Epoch 4 | Validation MSE: G1: 0.07211165, G2: 0.27830568, G3: 0.00487085 | Accuracy: G1: 48.68 %, G2: 48.68 %, G3: 48.12 %
+2026-01-29 21:04:38,838  INFO  Generator 1 | Sharpe: 0.3077 | MaxDrawdown: 16.36% | AnnualReturn: 1.69% | WinRate: 49.89% | CumReturn: 9.98% | AvgPosition: 47.82%
+2026-01-29 21:04:38,892  INFO  Generator 2 | Sharpe: 0.3133 | MaxDrawdown: 12.35% | AnnualReturn: 1.32% | WinRate: 49.89% | CumReturn: 7.71% | AvgPosition: 35.72%
+2026-01-29 21:04:38,975  INFO  Generator 3 | Sharpe: -0.5025 | MaxDrawdown: 27.22% | AnnualReturn: -3.22% | WinRate: 49.25% | CumReturn: -16.99% | AvgPosition: 47.78%
+2026-01-29 21:04:44,141  INFO  Epoch 5 | Validation MSE: G1: 0.04952463, G2: 0.12263687, G3: 0.00194793 | Accuracy: G1: 48.68 %, G2: 48.68 %, G3: 48.61 %
+2026-01-29 21:04:44,193  INFO  Generator 1 | Sharpe: 0.3088 | MaxDrawdown: 16.55% | AnnualReturn: 1.71% | WinRate: 49.89% | CumReturn: 10.14% | AvgPosition: 48.47%
+2026-01-29 21:04:44,247  INFO  Generator 2 | Sharpe: 0.3087 | MaxDrawdown: 13.10% | AnnualReturn: 1.37% | WinRate: 49.89% | CumReturn: 8.03% | AvgPosition: 37.86%
+2026-01-29 21:04:44,330  INFO  Generator 3 | Sharpe: 0.2901 | MaxDrawdown: 17.14% | AnnualReturn: 1.66% | WinRate: 49.82% | CumReturn: 9.82% | AvgPosition: 50.59%
+2026-01-29 21:04:49,585  INFO  Epoch 6 | Validation MSE: G1: 0.04133130, G2: 0.05300784, G3: 0.00187072 | Accuracy: G1: 48.68 %, G2: 48.68 %, G3: 48.61 %
+2026-01-29 21:04:49,637  INFO  Generator 1 | Sharpe: 0.3118 | MaxDrawdown: 16.55% | AnnualReturn: 1.74% | WinRate: 49.89% | CumReturn: 10.28% | AvgPosition: 48.59%
+2026-01-29 21:04:49,690  INFO  Generator 2 | Sharpe: 0.3030 | MaxDrawdown: 14.12% | AnnualReturn: 1.43% | WinRate: 49.89% | CumReturn: 8.43% | AvgPosition: 40.73%
+2026-01-29 21:04:49,774  INFO  Generator 3 | Sharpe: 0.2544 | MaxDrawdown: 17.24% | AnnualReturn: 1.43% | WinRate: 49.82% | CumReturn: 8.44% | AvgPosition: 50.78%
+2026-01-29 21:04:55,067  INFO  Epoch 7 | Validation MSE: G1: 0.03765107, G2: 0.03914547, G3: 0.00255730 | Accuracy: G1: 48.68 %, G2: 48.68 %, G3: 48.81 %
+2026-01-29 21:04:55,120  INFO  Generator 1 | Sharpe: 0.3144 | MaxDrawdown: 16.50% | AnnualReturn: 1.75% | WinRate: 49.89% | CumReturn: 10.36% | AvgPosition: 48.56%
+2026-01-29 21:04:55,174  INFO  Generator 2 | Sharpe: 0.2988 | MaxDrawdown: 15.12% | AnnualReturn: 1.51% | WinRate: 49.89% | CumReturn: 8.87% | AvgPosition: 43.65%
+2026-01-29 21:04:55,258  INFO  Generator 3 | Sharpe: -0.0026 | MaxDrawdown: 16.75% | AnnualReturn: -0.21% | WinRate: 49.96% | CumReturn: -1.18% | AvgPosition: 49.48%
+2026-01-29 21:05:00,550  INFO  Epoch 8 | Validation MSE: G1: 0.03413204, G2: 0.03350307, G3: 0.00226366 | Accuracy: G1: 48.68 %, G2: 48.68 %, G3: 47.70 %
+2026-01-29 21:05:00,603  INFO  Generator 1 | Sharpe: 0.3169 | MaxDrawdown: 16.43% | AnnualReturn: 1.76% | WinRate: 49.89% | CumReturn: 10.44% | AvgPosition: 48.47%
+2026-01-29 21:05:00,657  INFO  Generator 2 | Sharpe: 0.2973 | MaxDrawdown: 16.08% | AnnualReturn: 1.59% | WinRate: 49.89% | CumReturn: 9.37% | AvgPosition: 46.56%
+2026-01-29 21:05:00,740  INFO  Generator 3 | Sharpe: -0.3118 | MaxDrawdown: 18.28% | AnnualReturn: -2.09% | WinRate: 48.82% | CumReturn: -11.31% | AvgPosition: 49.29%
+2026-01-29 21:05:05,718  INFO  Epoch 9 | Validation MSE: G1: 0.03115555, G2: 0.03297612, G3: 0.00151719 | Accuracy: G1: 47.56 %, G2: 48.68 %, G3: 48.68 %
+2026-01-29 21:05:05,769  INFO  Generator 1 | Sharpe: 0.4917 | MaxDrawdown: 13.87% | AnnualReturn: 2.82% | WinRate: 48.75% | CumReturn: 17.15% | AvgPosition: 47.90%
+2026-01-29 21:05:05,825  INFO  Generator 2 | Sharpe: 0.3004 | MaxDrawdown: 16.56% | AnnualReturn: 1.66% | WinRate: 49.89% | CumReturn: 9.79% | AvgPosition: 48.20%
+2026-01-29 21:05:05,909  INFO  Generator 3 | Sharpe: 0.3129 | MaxDrawdown: 17.61% | AnnualReturn: 1.85% | WinRate: 49.89% | CumReturn: 11.01% | AvgPosition: 52.05%
+2026-01-29 21:05:10,925  INFO  Epoch 10 | Validation MSE: G1: 0.02747943, G2: 0.02980587, G3: 0.00152636 | Accuracy: G1: 47.77 %, G2: 48.68 %, G3: 49.16 %
+2026-01-29 21:05:10,981  INFO  Generator 1 | Sharpe: 0.4951 | MaxDrawdown: 6.12% | AnnualReturn: 2.87% | WinRate: 48.96% | CumReturn: 17.47% | AvgPosition: 47.96%
+2026-01-29 21:05:11,035  INFO  Generator 2 | Sharpe: 0.3057 | MaxDrawdown: 16.70% | AnnualReturn: 1.71% | WinRate: 49.89% | CumReturn: 10.11% | AvgPosition: 48.89%
+2026-01-29 21:05:11,119  INFO  Generator 3 | Sharpe: -0.1186 | MaxDrawdown: 11.56% | AnnualReturn: -0.91% | WinRate: 50.32% | CumReturn: -5.07% | AvgPosition: 48.70%
+2026-01-29 21:05:16,292  INFO  Epoch 11 | Validation MSE: G1: 0.02334646, G2: 0.01912524, G3: 0.00153748 | Accuracy: G1: 47.84 %, G2: 48.68 %, G3: 48.68 %
+2026-01-29 21:05:16,347  INFO  Generator 1 | Sharpe: 0.5507 | MaxDrawdown: 6.20% | AnnualReturn: 3.23% | WinRate: 49.04% | CumReturn: 19.83% | AvgPosition: 48.23%
+2026-01-29 21:05:16,401  INFO  Generator 2 | Sharpe: 0.3086 | MaxDrawdown: 16.81% | AnnualReturn: 1.74% | WinRate: 49.89% | CumReturn: 10.32% | AvgPosition: 49.39%
+2026-01-29 21:05:16,491  INFO  Generator 3 | Sharpe: 0.3109 | MaxDrawdown: 17.51% | AnnualReturn: 1.83% | WinRate: 49.89% | CumReturn: 10.84% | AvgPosition: 51.56%
+2026-01-29 21:05:21,622  INFO  Epoch 12 | Validation MSE: G1: 0.02123479, G2: 0.01327971, G3: 0.00124103 | Accuracy: G1: 47.77 %, G2: 48.68 %, G3: 47.98 %
+2026-01-29 21:05:21,674  INFO  Generator 1 | Sharpe: 0.4431 | MaxDrawdown: 6.38% | AnnualReturn: 2.56% | WinRate: 48.96% | CumReturn: 15.48% | AvgPosition: 48.40%
+2026-01-29 21:05:21,725  INFO  Generator 2 | Sharpe: 0.3113 | MaxDrawdown: 16.77% | AnnualReturn: 1.76% | WinRate: 49.89% | CumReturn: 10.42% | AvgPosition: 49.38%
+2026-01-29 21:05:21,816  INFO  Generator 3 | Sharpe: -0.2293 | MaxDrawdown: 15.75% | AnnualReturn: -1.60% | WinRate: 49.11% | CumReturn: -8.78% | AvgPosition: 49.73%
+2026-01-29 21:05:26,627  INFO  Epoch 13 | Validation MSE: G1: 0.01742097, G2: 0.00658568, G3: 0.00141879 | Accuracy: G1: 47.91 %, G2: 48.68 %, G3: 48.47 %
+2026-01-29 21:05:26,678  INFO  Generator 1 | Sharpe: 0.0892 | MaxDrawdown: 15.44% | AnnualReturn: 0.36% | WinRate: 49.11% | CumReturn: 2.07% | AvgPosition: 48.20%
+2026-01-29 21:05:26,730  INFO  Generator 2 | Sharpe: 0.3138 | MaxDrawdown: 16.57% | AnnualReturn: 1.76% | WinRate: 49.89% | CumReturn: 10.41% | AvgPosition: 48.87%
+2026-01-29 21:05:26,813  INFO  Generator 3 | Sharpe: -0.1503 | MaxDrawdown: 19.39% | AnnualReturn: -1.11% | WinRate: 49.61% | CumReturn: -6.13% | AvgPosition: 49.25%
+2026-01-29 21:05:32,092  INFO  Epoch 14 | Validation MSE: G1: 0.01595227, G2: 0.00238041, G3: 0.00195354 | Accuracy: G1: 47.98 %, G2: 48.68 %, G3: 48.68 %
+2026-01-29 21:05:32,143  INFO  Generator 1 | Sharpe: 0.1291 | MaxDrawdown: 4.14% | AnnualReturn: 0.61% | WinRate: 49.18% | CumReturn: 3.52% | AvgPosition: 48.20%
+2026-01-29 21:05:32,195  INFO  Generator 2 | Sharpe: 0.3134 | MaxDrawdown: 16.68% | AnnualReturn: 1.76% | WinRate: 49.89% | CumReturn: 10.45% | AvgPosition: 49.18%
+2026-01-29 21:05:32,279  INFO  Generator 3 | Sharpe: 0.3116 | MaxDrawdown: 17.51% | AnnualReturn: 1.83% | WinRate: 49.89% | CumReturn: 10.86% | AvgPosition: 51.54%
+2026-01-29 21:05:37,594  INFO  Epoch 15 | Validation MSE: G1: 0.01375966, G2: 0.00101650, G3: 0.00128191 | Accuracy: G1: 48.40 %, G2: 48.68 %, G3: 48.68 %
+2026-01-29 21:05:37,646  INFO  Generator 1 | Sharpe: 0.5600 | MaxDrawdown: 3.46% | AnnualReturn: 3.31% | WinRate: 49.61% | CumReturn: 20.37% | AvgPosition: 48.40%
+2026-01-29 21:05:37,707  INFO  Generator 2 | Sharpe: 0.3131 | MaxDrawdown: 16.79% | AnnualReturn: 1.77% | WinRate: 49.89% | CumReturn: 10.51% | AvgPosition: 49.53%
+2026-01-29 21:05:37,790  INFO  Generator 3 | Sharpe: 0.3118 | MaxDrawdown: 17.35% | AnnualReturn: 1.81% | WinRate: 49.89% | CumReturn: 10.76% | AvgPosition: 51.04%
+2026-01-29 21:05:42,922  INFO  Epoch 16 | Validation MSE: G1: 0.01176022, G2: 0.00071618, G3: 0.00143111 | Accuracy: G1: 48.26 %, G2: 48.68 %, G3: 48.68 %
+2026-01-29 21:05:42,982  INFO  Generator 1 | Sharpe: 0.5457 | MaxDrawdown: 0.00% | AnnualReturn: 3.22% | WinRate: 49.46% | CumReturn: 19.74% | AvgPosition: 48.39%
+2026-01-29 21:05:43,034  INFO  Generator 2 | Sharpe: 0.3133 | MaxDrawdown: 16.73% | AnnualReturn: 1.77% | WinRate: 49.89% | CumReturn: 10.48% | AvgPosition: 49.33%
+2026-01-29 21:05:43,117  INFO  Generator 3 | Sharpe: 0.3110 | MaxDrawdown: 17.70% | AnnualReturn: 1.84% | WinRate: 49.89% | CumReturn: 10.93% | AvgPosition: 52.04%
+2026-01-29 21:05:48,308  INFO  Epoch 17 | Validation MSE: G1: 0.01232018, G2: 0.00074360, G3: 0.00124048 | Accuracy: G1: 48.12 %, G2: 48.68 %, G3: 48.05 %
+2026-01-29 21:05:48,361  INFO  Generator 1 | Sharpe: 0.4549 | MaxDrawdown: 3.14% | AnnualReturn: 2.65% | WinRate: 49.32% | CumReturn: 16.02% | AvgPosition: 48.37%
+2026-01-29 21:05:48,416  INFO  Generator 2 | Sharpe: 0.3133 | MaxDrawdown: 16.74% | AnnualReturn: 1.77% | WinRate: 49.89% | CumReturn: 10.49% | AvgPosition: 49.37%
+2026-01-29 21:05:48,506  INFO  Generator 3 | Sharpe: -0.3696 | MaxDrawdown: 19.65% | AnnualReturn: -2.44% | WinRate: 49.18% | CumReturn: -13.12% | AvgPosition: 49.53%
+2026-01-29 21:05:53,871  INFO  Epoch 18 | Validation MSE: G1: 0.01005575, G2: 0.00075404, G3: 0.00156104 | Accuracy: G1: 48.47 %, G2: 48.68 %, G3: 49.86 %
+2026-01-29 21:05:53,923  INFO  Generator 1 | Sharpe: 0.4334 | MaxDrawdown: 3.14% | AnnualReturn: 2.51% | WinRate: 49.68% | CumReturn: 15.12% | AvgPosition: 48.33%
+2026-01-29 21:05:53,975  INFO  Generator 2 | Sharpe: 0.3125 | MaxDrawdown: 16.75% | AnnualReturn: 1.76% | WinRate: 49.89% | CumReturn: 10.46% | AvgPosition: 49.37%
+2026-01-29 21:05:54,057  INFO  Generator 3 | Sharpe: 0.4570 | MaxDrawdown: 16.24% | AnnualReturn: 2.74% | WinRate: 51.04% | CumReturn: 16.64% | AvgPosition: 50.70%
+2026-01-29 21:05:59,329  INFO  Epoch 19 | Validation MSE: G1: 0.01029390, G2: 0.00075393, G3: 0.00144255 | Accuracy: G1: 48.19 %, G2: 48.68 %, G3: 48.26 %
+2026-01-29 21:05:59,382  INFO  Generator 1 | Sharpe: 0.2758 | MaxDrawdown: 12.28% | AnnualReturn: 1.52% | WinRate: 49.39% | CumReturn: 8.95% | AvgPosition: 48.35%
+2026-01-29 21:05:59,434  INFO  Generator 2 | Sharpe: 0.3125 | MaxDrawdown: 16.76% | AnnualReturn: 1.77% | WinRate: 49.89% | CumReturn: 10.46% | AvgPosition: 49.41%
+2026-01-29 21:05:59,516  INFO  Generator 3 | Sharpe: -0.1406 | MaxDrawdown: 16.66% | AnnualReturn: -1.07% | WinRate: 49.39% | CumReturn: -5.93% | AvgPosition: 50.12%
+2026-01-29 21:06:04,877  INFO  Epoch 20 | Validation MSE: G1: 0.01034022, G2: 0.00075645, G3: 0.00138294 | Accuracy: G1: 48.68 %, G2: 48.68 %, G3: 46.93 %
+2026-01-29 21:06:04,930  INFO  Generator 1 | Sharpe: 0.3933 | MaxDrawdown: 3.14% | AnnualReturn: 2.25% | WinRate: 49.89% | CumReturn: 13.51% | AvgPosition: 48.37%
+2026-01-29 21:06:04,982  INFO  Generator 2 | Sharpe: 0.3124 | MaxDrawdown: 16.78% | AnnualReturn: 1.77% | WinRate: 49.89% | CumReturn: 10.47% | AvgPosition: 49.46%
+2026-01-29 21:06:05,072  INFO  Generator 3 | Sharpe: -0.5404 | MaxDrawdown: 21.48% | AnnualReturn: -3.50% | WinRate: 48.03% | CumReturn: -18.32% | AvgPosition: 49.95%
+2026-01-29 21:06:10,223  INFO  Epoch 21 | Validation MSE: G1: 0.01029784, G2: 0.00075541, G3: 0.00144942 | Accuracy: G1: 48.40 %, G2: 48.68 %, G3: 47.28 %
+2026-01-29 21:06:10,273  INFO  Generator 1 | Sharpe: 0.2735 | MaxDrawdown: 12.11% | AnnualReturn: 1.50% | WinRate: 49.61% | CumReturn: 8.86% | AvgPosition: 48.35%
+2026-01-29 21:06:10,325  INFO  Generator 2 | Sharpe: 0.3124 | MaxDrawdown: 16.76% | AnnualReturn: 1.77% | WinRate: 49.89% | CumReturn: 10.46% | AvgPosition: 49.40%
+2026-01-29 21:06:10,410  INFO  Generator 3 | Sharpe: -0.4856 | MaxDrawdown: 19.99% | AnnualReturn: -3.15% | WinRate: 48.39% | CumReturn: -16.66% | AvgPosition: 49.77%
+2026-01-29 21:06:15,776  INFO  Epoch 22 | Validation MSE: G1: 0.01020782, G2: 0.00075446, G3: 0.00155398 | Accuracy: G1: 48.68 %, G2: 48.68 %, G3: 47.77 %
+2026-01-29 21:06:15,828  INFO  Generator 1 | Sharpe: 0.3753 | MaxDrawdown: 10.01% | AnnualReturn: 2.14% | WinRate: 49.89% | CumReturn: 12.80% | AvgPosition: 48.40%
+2026-01-29 21:06:15,881  INFO  Generator 2 | Sharpe: 0.3123 | MaxDrawdown: 16.79% | AnnualReturn: 1.77% | WinRate: 49.89% | CumReturn: 10.47% | AvgPosition: 49.48%
+2026-01-29 21:06:15,974  INFO  Generator 3 | Sharpe: -0.3648 | MaxDrawdown: 18.39% | AnnualReturn: -2.42% | WinRate: 48.89% | CumReturn: -13.01% | AvgPosition: 49.65%
+2026-01-29 21:06:20,892  INFO  Epoch 23 | Validation MSE: G1: 0.01041043, G2: 0.00075451, G3: 0.00125145 | Accuracy: G1: 48.61 %, G2: 48.68 %, G3: 47.63 %
+2026-01-29 21:06:20,943  INFO  Generator 1 | Sharpe: 0.2735 | MaxDrawdown: 11.31% | AnnualReturn: 1.50% | WinRate: 49.82% | CumReturn: 8.86% | AvgPosition: 48.37%
+2026-01-29 21:06:20,995  INFO  Generator 2 | Sharpe: 0.3124 | MaxDrawdown: 16.76% | AnnualReturn: 1.76% | WinRate: 49.89% | CumReturn: 10.46% | AvgPosition: 49.41%
+2026-01-29 21:06:21,078  INFO  Generator 3 | Sharpe: -0.4829 | MaxDrawdown: 20.88% | AnnualReturn: -3.13% | WinRate: 48.75% | CumReturn: -16.52% | AvgPosition: 49.58%
+2026-01-29 21:06:29,454  INFO  [Best MSE Epochs]     G1:-1, G2:-1, G3:-1
+2026-01-29 21:06:29,454  INFO  [Best MSE Values]     N/A, N/A, N/A
+2026-01-29 21:06:29,454  INFO  [Best ACC Epochs]     G1:1, G2:2, G3:1
+2026-01-29 21:06:29,455  INFO  [Best Accuracy Values]G1: 48.68%, G2: 48.68%, G3: 49.86%
+2026-01-29 21:06:33,980  INFO  [Train] MAA-TSF-GRU: MSE=4588.7086, MAE=57.5373, RMSE=67.7400, MAPE=3.1928
+2026-01-29 21:06:33,980  INFO  [Test]  MAA-TSF-GRU: MSE=27123.2411, MAE=132.2072, RMSE=164.6914, MAPE=5.0035
+2026-01-29 21:06:37,540  INFO  [Train] MAA-TSF-LSTM: MSE=2885.9333, MAE=37.7981, RMSE=53.7209, MAPE=2.2833
+2026-01-29 21:06:37,540  INFO  [Test]  MAA-TSF-LSTM: MSE=2003.7375, MAE=34.3932, RMSE=44.7631, MAPE=1.3625
+2026-01-29 21:06:41,158  INFO  [Train] MAA-TSF-Transformer: MSE=614.8612, MAE=16.4726, RMSE=24.7964, MAPE=0.8932
+2026-01-29 21:06:41,158  INFO  [Test]  MAA-TSF-Transformer: MSE=3077.1530, MAE=40.2559, RMSE=55.4721, MAPE=1.5248

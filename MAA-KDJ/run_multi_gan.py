@@ -97,8 +97,9 @@ def run_experiments(args):
         for i, result_acc in enumerate(results_acc):
             test_results[i]["Accuracy"] = round(results_acc[i] * 100, 2)
             test_results[i]["target"]=args.target_name
-
-            test_results[i].update(financial_metric[i])
+            # 修改了这里，添加 financial_metric 到 test_results
+            if financial_metric and i < len(financial_metric):
+                test_results[i].update(financial_metric[i])
 
     elif args.mode == "pred":
         results = maa.pred()
@@ -145,7 +146,7 @@ if __name__ == "__main__":
     parser.add_argument('--cross_finetune_epochs', type=int, help="Epochs to do distillation", default=5)
     parser.add_argument('--device', type=list, help="Device sets", default=[0])
 
-    parser.add_argument('--num_epochs', type=int, help="epoch", default=1)
+    parser.add_argument('--num_epochs', type=int, help="epoch", default=50)
     parser.add_argument('--lr', type=int, help="initial learning rate", default=2e-5)
     parser.add_argument('--batch_size', type=int, help="Batch size for training", default=64)
     parser.add_argument('--train_split', type=float, help="Train-test split ratio", default=0.7)
